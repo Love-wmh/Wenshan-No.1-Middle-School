@@ -1,0 +1,175 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>2024.10.28-2024.11.3周报 | Love?</title>
+<link rel="shortcut icon" href="https://Love-wmh.github.io/favicon.ico?v=1735305085739">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://Love-wmh.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="2024.10.28-2024.11.3周报 | Love? - Atom Feed" href="https://Love-wmh.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="本周成果：
+
+学习了字符串函数strcat，strlen，strcpy等等
+通过写Ocean Decoding Mission，更加熟练了字符串函数，指针的定义与使用，函数的嵌套调用
+[图片]
+复习高精度运算
+学习了结构体，结构体数组，结构..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://Love-wmh.github.io">
+  <img class="avatar" src="https://Love-wmh.github.io/images/avatar.png?v=1735305085739" alt="">
+  </a>
+  <h1 class="site-title">
+    Love?
+  </h1>
+  <p class="site-description">
+    保持热爱，奔赴山海
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="https://Love-wmh.github.io" class="menu">
+          海豹
+        </a>
+      
+    
+      
+        <a href="https://user.qzone.qq.com/2179669784" class="menu" target="_blank">
+          球球
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              2024.10.28-2024.11.3周报
+            </h2>
+            <div class="post-info">
+              <span>
+                2024-11-10
+              </span>
+              <span>
+                1 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <p>本周成果：</p>
+<ol>
+<li>学习了字符串函数strcat，strlen，strcpy等等</li>
+<li>通过写Ocean Decoding Mission，更加熟练了字符串函数，指针的定义与使用，函数的嵌套调用<br>
+[图片]</li>
+<li>复习高精度运算</li>
+<li>学习了结构体，结构体数组，结构体指针，写了一个程序来查谁没有写线性代数作业<br>
+[图片]<br>
+本周遗憾：</li>
+<li>高精度运算不能熟练实现</li>
+<li>没有学习到宏定义</li>
+<li>学习时间安排的不合理<br>
+下周目标：</li>
+<li>再深化高精度预算</li>
+<li>继续做OJ的题，多做多练</li>
+<li>复习一下学过的基础知识，备考</li>
+</ol>
+
+              </div>
+              <div class="toc-container">
+                
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://Love-wmh.github.io/post/20241020-20241027-zhou-bao/">
+              <h3 class="post-title">
+                2024.10.20-2024.10.27周报
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://Love-wmh.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>
